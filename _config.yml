@@ -21,10 +21,11 @@ author: Aryan Singh
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://zaryanz.github.io/"
+  # Resources:
+  #   - Beautiful Jekyll: "https://beautifuljekyll.com"
+  #   - Learn markdown: "https://www.markdowntutorial.com/"
+  Projects: "projects"
+  Resume: "/static/Aryan_Singh_Resume.pdf"
 
 ################
 # --- Logo --- #
