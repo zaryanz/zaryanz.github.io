@@ -17,7 +17,21 @@ export default function ParentComponent() {
   const [count, setCount] = useState(0);
   const [text, setText] = useState("");
 
-  const valueFromSlowFunction = useMemo(() => slowFunction(count1), [count1]);
+  const slowFunction = (count) => {
+    for (let i = 0; i < 10000; i++) {
+      count += 1;
+      for (let i = 0; i < 10000; i++) {
+        count += 1;
+      }
+      for (let i = 0; i < 10000; i++) {
+        count += 1;
+      }
+    }
+    console.log(`new count calculated: ${count}`);
+    return count;
+  };
+
+  const valueFromSlowFunction = slowFunction(count);
 
   return (
     <div className="App">
@@ -29,58 +43,8 @@ export default function ParentComponent() {
 }
 ```
 
+So at first glace, there seems to be a lot going on, but let me break it down for you.
+
 We start with two simple React states, one _count_ state, that can be updated with a button click, and a _text_ state that is bound to the input field.
 
-How about a yummy crepe?
-
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
-
-It can also be centered!
-
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .mx-auto.d-block :}
-
-Here's a code chunk:
-
-```
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function (x) {
-  return x + 5;
-};
-foo(3);
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
+_slowFunction_ is a function that is emulated to be slow. There is a log statement inside the function that prints "new count calculated" which will help us better understand what's going on.
