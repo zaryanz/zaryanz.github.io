@@ -13,7 +13,7 @@ Here is the code that we are going to start off with,
 ```jsx
 import { useState, useMemo } from "react";
 
-export default function ParentComponent() {
+export default function App() {
   const [count, setCount] = useState(0);
   const [text, setText] = useState("");
 
