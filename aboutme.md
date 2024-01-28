@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle:
+share-title: Aryan Singh | About me
 ---
 
 Hi, I'm Aryan!
