@@ -43,7 +43,7 @@ export default function App() {
 }
 ```
 
-So at first glace, there seems to be a lot going on, but let me break it down for you.
+So at first glance, there seems to be a lot going on, but let me break it down for you.
 
 We start with two simple React states, one _count_ state, that can be updated with a button click, and a _text_ state that is bound to the input field. _slowFunction_ is a function that is emulated to be slow and _valueFromSlowFunction_ is the variable that we would store this expensive function's computed value in.
 
