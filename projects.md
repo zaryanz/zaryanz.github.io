@@ -8,7 +8,7 @@ share-title: Aryan Singh | Projects
 
 ## Projects I have built or worked on
 
-<div style="flex-direction:row;">
+<div style="flex-direction:row; margin-bottom: 100px;">
 <a href="https://apps.apple.com/in/app/for-all-community/id1658745332" target="_blank" style="text-decoration: none;">
 <img src="/assets/img/gptw_app_icon.webp" alt="FOR ALL COMMUNITY application icon" style="border-radius: 12.5%; width: 12.5%" />
 </a>
