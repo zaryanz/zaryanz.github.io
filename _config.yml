@@ -25,7 +25,10 @@ navbar-links:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
   Projects: "projects"
-  Resume: "/static/Aryan_Singh_Resume.pdf"
+  Resume: "resume"
+
+js-files:
+  resume: "/assets/js/resume.js"
 
 ################
 # --- Logo --- #

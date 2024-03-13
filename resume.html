@@ -1,0 +1,60 @@
+---
+layout: page
+title: Resume
+---
+
+<hr />
+
+<div style="flex-direction: row; margin-bottom: 100px; margin-top: 30px">
+  <p>
+    I am open for Software Engineer roles. You can reach out to me in the
+    <a href="/aboutme">About Me</a> section. My resume can be found below:
+  </p>
+  <div id="resume-download-section">
+    <span
+      id="resume-pdf-icon"
+      class="far fa-file-pdf"
+      style="margin-right: 4px"
+    ></span>
+    <a
+      id="resume-download-link"
+      target="_blank"
+      href="/static/Aryan_Singh_Resume.pdf"
+      >Download/View Resume</a
+    >
+  </div>
+</div>
+
+<script>
+  // date formatting logic
+  Date.prototype.toShortFormat = function () {
+    const monthNames = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    const day = this.getDate();
+    const monthIndex = this.getMonth();
+    const monthName = monthNames[monthIndex];
+    const year = this.getFullYear();
+
+    return `${day} ${monthName} ${year}`;
+  };
+
+  fetch("/static/Aryan_Singh_Resume.pdf").then((data) => {
+    let resumeLastModifiedDate = new Date(data.headers.get("Last-Modified"));
+    resumeLastModifiedDate = resumeLastModifiedDate.toShortFormat();
+    document.querySelector(
+      "#resume-download-link"
+    ).innerHTML += ` (Last updated on ${resumeLastModifiedDate})`;
+  });
+</script>
