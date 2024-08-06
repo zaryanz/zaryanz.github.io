@@ -6,7 +6,7 @@ tags: [react, hooks, usememo]
 comments: true
 ---
 
-React's useMemo hook is often misunderstood. This is my attempt to explain it's usage with a simple example.
+React's useMemo hook is often misunderstood. This is my attempt to explain its usage with a simple example.
 
 Here is the code that we are going to start off with,
 
@@ -45,13 +45,23 @@ export default function App() {
 
 So at first glance, there seems to be a lot going on, but let me break it down for you.
 
-We start with two simple React states, one _count_ state, that can be updated with a button click, and a _text_ state that is bound to the input field. _slowFunction_ is a function that is emulated to be slow and _valueFromSlowFunction_ is the variable that we would store this expensive function's computed value in.
+We start with two simple React states:
 
-Now using this code, I want you to try to change the value of the input field by typing in something. You would realize right off the bat that the typing feels very laggy. This is because every time you are changing the _text_ state, a re-render is caused in the App component, which causes the expensive function to run and compute _valueFromSlowFunction_ every single time you type in a character.
+- A _count_ state, that can be updated with a button click.
+- A _text_ state that is bound to the input field.
+
+Additionally, we have:
+
+- _slowFunction_ is a function that is emulated to be slow.
+- _valueFromSlowFunction_ is the variable that we would store this expensive function's computed value in.
+
+Now, using this code, I want you to try to change the value of the input field by typing in something. You'll quickly notice that the typing feels quite laggy.
+
+This is because every time you change the _text_ state, a re-render is caused in the App component, which causes the expensive function to run and compute _valueFromSlowFunction_ every single time you type in a character.
 
 You would also notice that you get a `new count calculated` log statement in the console a bunch of times, which confirms that the _slowFunction_ is being run every time the _text_ state changes.
 
-The way that we are going to solve this problem is by wrapping the computed value _valueFromSlowFunction_ with the _useMemo_ hook,
+The way that we are going to solve this problem is by wrapping the computed value _valueFromSlowFunction_ with the _useMemo_ hook.
 
 ```jsx
 import { useState, useMemo } from "react";
