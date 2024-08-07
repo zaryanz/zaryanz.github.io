@@ -1,0 +1,37 @@
+.theme-toggle-switch-container {
+  /* position: absolute; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  width: 1.75rem;
+  height: 1.75rem;
+  font-size: 1rem;
+  border-radius: 5rem;
+  background-color: #fff;
+  color: #fdb813;
+}
+
+.theme-toggle-switch-container:hover {
+  background-color: #888;
+}
+
+.dark-mode {
+  --page-col: #18191a;
+  --text-col: #e4e6eb;
+  --link-col: #139ee0;
+  --hover-col: #28a9e6;
+  --navbar-col: #242526;
+  --navbar-text-col: #e4e6eb;
+  --navbar-border-col: #393a3b;
+  --footer-col: #242526;
+  --footer-text-col: #aaaaaa;
+  --footer-link-col: #dfdfdf;
+  --footer-hover-col: #28a9e6;
+  --mid-col: #999999;
+}
+
+.dark-mode .navbar-custom {
+  background-color: #000000;
+}

@@ -1,0 +1,21 @@
+<div class="theme-toggle-switch-container" id="theme-toggle-switch-btn">
+  <i class="fas fa-moon"></i>
+</div>
+<script>
+  const btn = document.getElementById("theme-toggle-switch-btn");
+  btn.addEventListener("click", () => {
+    if (btn.innerHTML.trim() === `<i class="fas fa-moon"></i>`) {
+      document.body.classList.add("dark-mode");
+      localStorage.setItem("theme", "dark");
+      btn.innerHTML = `<i class="fas fa-sun"></i>`;
+    } else {
+      document.body.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
+      btn.innerHTML = `<i class="fas fa-moon"></i>`;
+    }
+  });
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    btn.innerHTML = `<i class="fas fa-sun"></i>`;
+  }
+</script>
