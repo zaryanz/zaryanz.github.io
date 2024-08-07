@@ -13,6 +13,7 @@
       localStorage.setItem("theme", "light");
       btn.innerHTML = `<i class="fas fa-moon"></i>`;
     }
+    BeautifulJekyllJS.initNavbar();
   });
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");

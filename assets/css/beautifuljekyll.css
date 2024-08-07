@@ -233,6 +233,7 @@ img {
   .navbar-custom {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+    padding-right: 4.25rem;
   }
 
   .navbar-custom .navbar-brand-logo {
@@ -399,7 +400,7 @@ img {
 
 footer {
   padding: 1.875rem 0;
-  border-top: 1px #EAEAEA solid;
+  border-top: 1px var(--footer-col) solid;
   margin-top: 3.125rem;
   font-size: 0.875rem;
   background-color: var(--footer-col);
@@ -455,6 +456,9 @@ footer .footer-custom-content {
   }
   footer .footer-custom-content {
     font-size: 1rem;
+  }
+  footer .footer-links .fa-inverse {
+    color: var(--page-col);
   }
 }
 
@@ -898,8 +902,12 @@ pre code {
 pre {
   font-size: 0.875rem;
   line-height: 1.5em;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   padding: 0.59375rem;
+}
+
+.highlight {
+  border-radius: 0.75rem;
 }
 
 .highlight pre {
