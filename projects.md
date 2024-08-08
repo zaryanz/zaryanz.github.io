@@ -26,10 +26,10 @@ share-title: Aryan Singh | Projects
 </a>
 
 <a href="https://www.asttaas.com/" target="_blank" style="text-decoration: none;">
-<img src="/assets/img/ast_logo.png" alt="Travokarma application icon" style="width: 15%"/>
+<img src="/assets/img/ast_logo.webp" alt="Travokarma application icon" style="width: 15%"/>
 </a>
 
 <a href="https://www.remassis.com/" target="_blank" style="text-decoration: none;">
-<img src="/assets/img/remassis_logo.png" alt="Travokarma application icon" style="width: 20%"/>
+<img src="/assets/img/remassis_logo.webp" alt="Travokarma application icon" style="width: 20%"/>
 </a>
 </div>
