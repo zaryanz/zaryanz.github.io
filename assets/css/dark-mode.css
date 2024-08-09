@@ -30,6 +30,10 @@
   color: #fdb813;
 }
 
+.dark-mode .post-preview {
+  border-bottom-color: #444;
+}
+
 .dark-mode {
   --page-col: #18191a;
   --text-col: #e4e6eb;

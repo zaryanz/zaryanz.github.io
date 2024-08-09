@@ -833,7 +833,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   font-weight: 800;
   letter-spacing: 1px;
   padding: 0.625rem 0.3125rem;
-  background-color: #FFF;
+  background-color: var(--page-col);
   border-radius: 0;
   color: var(--text-col);
 }
