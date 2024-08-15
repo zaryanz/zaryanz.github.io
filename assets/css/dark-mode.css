@@ -26,12 +26,8 @@
 }
 
 .dark-mode .theme-toggle-switch-container {
-  border: 1px solid #444;
+  border-color: #444;
   color: #fdb813;
-}
-
-.dark-mode .post-preview {
-  border-bottom-color: #444;
 }
 
 .dark-mode {
@@ -47,4 +43,5 @@
   --footer-link-col: #dfdfdf;
   --footer-hover-col: #28a9e6;
   --mid-col: #999999;
+  --border-col: #444;
 }

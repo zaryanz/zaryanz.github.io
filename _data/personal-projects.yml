@@ -1,0 +1,4 @@
+- name: "MovieFinder"
+  image: "/assets/img/MovieFinderPoster.png"
+  description: "Find your favorite movies, series and look at the imDB ratings. Save movies you want to watch later in the offline Watchlist!"
+  github_link: "https://github.com/zaryanz/MovieFinder"
