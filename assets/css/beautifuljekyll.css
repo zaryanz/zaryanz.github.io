@@ -25,6 +25,7 @@ html {
   --body-font: 'Lora', 'Times New Roman', serif;
   --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mid-col: #808080;
+  --border-col: #eee;
 }
 
 body {
@@ -39,6 +40,7 @@ body {
   {% endif %}
   overflow-wrap: break-word;
 }
+hr { background-color: var(--border-col); height: 1px; border: 0; }
 p {
   line-height: 1.5;
   margin: 1.875rem 0;
@@ -471,7 +473,7 @@ footer .footer-links .fa-inverse {
 
 .post-preview {
   padding: 1.25rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-col);
   overflow: hidden;
 }
 
@@ -1126,4 +1128,37 @@ pre {
   #nav-search-text {
     display: inline-block;
   }
+}
+
+/* card related styles */
+.custom-card {
+  width: 20rem;
+  background-color: var(--page-col);
+  border: 1.5px solid var(--border-col);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  /* box-shadow: 0 0 0.5rem #444; */
+}
+
+.custom-card img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.custom-card .custom-card-text-container {
+  padding: 1rem;
+}
+
+.custom-card .custom-card-header {
+  font-family: var(--header-font);
+  margin: 0;
+}
+
+.custom-card p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.custom-card h3 {
+  margin-top: 0.5rem;
 }
