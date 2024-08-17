@@ -103,4 +103,7 @@
   href="{{ "/assets/css/staticman.css" | relative_url }}"> {% endif %} {% if
   page.head-extra %} {% for file in page.head-extra %} {% include {{ file }} %}
   {% endfor %} {% endif %}
+
+  <!-- Adding this here to reduce LCP for homepage -->
+  <link rel="preload" href="{{ site.cover-img }}" as="image" />
 </head>
