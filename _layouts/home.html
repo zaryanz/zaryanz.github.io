@@ -30,10 +30,20 @@ layout: page
         {% endif %}
       </a>
 
-      <p class="post-meta">
-        {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-        Posted on {{ post.date | date: date_format }}
-      </p>
+      {% capture words %} {{ post.content | number_of_words }} {% endcapture %}
+
+      <div>
+        <p class="post-meta" style="display: inline-block">
+          <i class="fas fa-calendar"></i>
+          {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+          Posted on {{post.date | date: date_format }}
+        </p>
+
+        <p class="post-meta" style="float: right; margin-right: 0.5rem">
+          <i class="fas fa-clock"></i>
+          {{ words | divided_by: 180 | append: ' Min Read' }}
+        </p>
+      </div>
 
       {% if thumbnail != "" %}
       <div class="post-image post-image-small">

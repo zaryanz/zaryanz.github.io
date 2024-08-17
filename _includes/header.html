@@ -72,7 +72,19 @@
           {% endif %}
 
           {% if include.type == "post" %}
-            <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
+            <div>
+              <p class="post-meta" style="display: inline-block">
+                <i class="fas fa-calendar"></i>
+                {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+                Posted on {{ page.date | date: date_format }}
+              </p>
+
+              <p class="post-meta" style="float: right">
+                <i class="fas fa-clock"></i>
+                {% capture words %} {{ page.content | number_of_words }} {% endcapture %}
+                {{ words | divided_by: 180 | append: ' Min Read' }}
+              </p>
+            </div>
             {% if page.last-updated %}
               <span class="post-meta">
                 <span class="d-none d-md-inline middot">&middot;</span>
