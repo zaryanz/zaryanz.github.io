@@ -76,7 +76,7 @@
               <p class="post-meta" style="display: inline-block">
                 <i class="fas fa-calendar"></i>
                 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-                {{ page.date | date: date_format }}
+                Posted on {{ page.date | date: date_format }}
               </p>
 
               <p class="post-meta" style="float: right">

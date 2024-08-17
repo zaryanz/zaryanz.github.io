@@ -35,8 +35,8 @@ layout: page
       <div>
         <p class="post-meta" style="display: inline-block">
           <i class="fas fa-calendar"></i>
-          {% assign date_format = site.date_format | default: "%B %-d, %Y" %} {{
-          post.date | date: date_format }}
+          {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+          Posted on {{post.date | date: date_format }}
         </p>
 
         <p class="post-meta" style="float: right; margin-right: 0.5rem">
