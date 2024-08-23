@@ -39,17 +39,27 @@ share-title: Aryan Singh | Projects
 {% for project in site.data.personal-projects %}
 <div class="custom-card">
   <a href="#">
-  <img src="{{ project.image }}" alt="{{ project.name }}" />
+  <img src="{{ project.image }}" alt="{{ project.name }} Poster" />
   </a>
   <div class="custom-card-text-container">
     <h3>{{ project.name }}</h3>
     <p>{{ project.description }}</p>
-    <a
-      href="{{ project.github_link }}"
-      class="d-flex flex-direction-row align-items-center mt-3 mb-2"
-      ><i class="fab fa-github mr-1"></i>
-      <p>GitHub Link</p></a
-    >
+    {% if project.github_link %}
+      <a
+        href="{{ project.github_link }}"
+        class="d-flex flex-direction-row align-items-center mt-3 mb-2"
+        ><i class="fab fa-github mr-1"></i>
+        <p>GitHub Link</p>
+        </a>
+    {% endif %}
+    {% if project.website_link %}
+      <a
+        href="{{ project.website_link }}"
+        class="d-flex flex-direction-row align-items-center mt-3 mb-2"
+        ><i class="fas fa-globe mr-1"></i>
+        <p>Web Link</p>
+        </a>
+    {% endif %}
   </div>
 </div>
 {% endfor %}
