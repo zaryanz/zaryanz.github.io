@@ -8,7 +8,7 @@ share-title: Aryan Singh | Projects
 
 <h2 class="mb-0">Projects I have built or worked on</h2>
 
-<div style="flex-direction:row; margin-top: 1rem;">
+<div style="flex-direction:row;">
 <a href="https://apps.apple.com/in/app/for-all-community/id1658745332" target="_blank" style="text-decoration: none;">
 <img src="/assets/img/gptw_app_icon.webp" alt="FOR ALL COMMUNITY application icon" class="project-icon" />
 </a>
@@ -30,7 +30,7 @@ share-title: Aryan Singh | Projects
 </a>
 
 <a href="https://www.remassis.com/" target="_blank" style="text-decoration: none;">
-<img src="/assets/img/remassis_logo.webp" alt="Remassis app icon" class="project-icon" style="width: 8rem" />
+<img src="/assets/img/remassis_logo.webp" alt="Remassis app icon" class="project-icon" />
 </a>
 </div>
 ---
