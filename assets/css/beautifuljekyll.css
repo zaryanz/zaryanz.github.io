@@ -1138,7 +1138,6 @@ pre {
   border-radius: 0.5rem;
   margin-top: 1rem;
   margin-right: 1rem;
-  /* box-shadow: 0 0 0.5rem #444; */
 }
 
 .custom-card img {
@@ -1174,4 +1173,5 @@ pre {
   border-radius: 12.5%;
   width: 6.25rem;
   margin-right: 0.5rem;
+  margin-top: 1rem;
 }
