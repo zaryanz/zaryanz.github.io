@@ -1132,7 +1132,7 @@ pre {
 
 /* card related styles */
 .custom-card {
-  width: 21rem;
+  width: 21.5rem;
   background-color: var(--page-col);
   border: 1.5px solid var(--border-col);
   border-radius: 0.5rem;
