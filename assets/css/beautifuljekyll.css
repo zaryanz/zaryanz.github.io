@@ -1132,11 +1132,12 @@ pre {
 
 /* card related styles */
 .custom-card {
-  width: 20rem;
+  width: 21rem;
   background-color: var(--page-col);
   border: 1.5px solid var(--border-col);
   border-radius: 0.5rem;
   margin-top: 1rem;
+  margin-right: 1rem;
   /* box-shadow: 0 0 0.5rem #444; */
 }
 
@@ -1161,4 +1162,16 @@ pre {
 
 .custom-card h3 {
   margin-top: 0.5rem;
+}
+
+.personal-projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project-icon {
+  border-radius: 12.5%;
+  width: 6.25rem;
+  margin-right: 0.5rem;
 }

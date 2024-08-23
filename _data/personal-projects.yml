@@ -1,4 +1,9 @@
-- name: "MovieFinder"
-  image: "/assets/img/MovieFinderPoster.webp"
-  description: "Find your favorite movies, series and look at the imDB ratings. Save movies you want to watch later in the offline Watchlist!"
-  github_link: "https://github.com/zaryanz/MovieFinder"
+- name: MovieFinder
+  image: /assets/img/MovieFinderPoster.webp
+  description: Find your favorite movies, series and look at the imDB ratings. Save movies you want to watch later in the offline Watchlist!
+  github_link: https://github.com/zaryanz/MovieFinder
+
+- name: School Management App for JMRD
+  image: /assets/img/JMRDPoster.webp
+  description: School Management App featuring easy attendance tracking, assignment updates, a virtual notice board and a fun QnA section!
+  website_link: https://jmrddatia.github.io/
