@@ -38,9 +38,7 @@ share-title: Aryan Singh | Projects
 <div class="personal-projects-container">
 {% for project in site.data.personal-projects %}
 <div class="custom-card">
-  <a href="#">
-  <img src="{{ project.image }}" alt="{{ project.name }} Poster" />
-  </a>
+  <img src="{{ project.image }}" alt="{{ project.name }} Poster" onclick="window.open(this.src)" style="cursor: pointer;" />
   <div class="custom-card-text-container">
     <h3>{{ project.name }}</h3>
     <p>{{ project.description }}</p>
