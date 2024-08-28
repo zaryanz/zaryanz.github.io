@@ -1169,9 +1169,45 @@ pre {
   flex-wrap: wrap;
 }
 
+.project-icons-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
 .project-icon {
   border-radius: 12.5%;
   width: 6.25rem;
   margin-right: 0.5rem;
   margin-top: 1rem;
+}
+
+.project-icon-container {
+  display: block;
+  align-items: center;
+  text-decoration: none;
+  width: 6.25rem;
+  max-width: 6.25rem;
+  margin-right: 1rem;
+}
+
+.project-icon-img-container {
+  display: flex;
+  height: 6.25rem;
+  width: 6.25rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.project-icon-title {
+  display: inline-block;
+  margin: 0;
+  width: 6.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: var(--header-font);
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0.5rem;
 }
