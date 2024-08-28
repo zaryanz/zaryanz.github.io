@@ -30,6 +30,10 @@
   color: #fdb813;
 }
 
+.dark-mode .project-icon-img-container {
+  border: 0.5px solid var(--border-col);
+}
+
 .dark-mode {
   --page-col: #18191a;
   --text-col: #e4e6eb;

@@ -10,22 +10,30 @@ share-title: Aryan Singh | Projects
 
 <div class="project-icons-container">
 <a href="https://apps.apple.com/in/app/for-all-community/id1658745332" target="_blank" class="project-icon-container">
+<div class="project-icon-img-container">
 <img src="/assets/img/gptw_app_icon.webp" alt="FOR ALL COMMUNITY application icon" class="project-icon" />
+</div>
 <p class="project-icon-title">FOR ALL COMMUNITY</p>
 </a>
 
 <a href="https://apps.apple.com/in/app/travokarma/id1596474556" target="_blank" class="project-icon-container">
+<div class="project-icon-img-container">
 <img src="/assets/img/travokarma_app_icon.webp" alt="Travokarma application icon" class="project-icon" />
+</div>
 <p class="project-icon-title">Travokarma</p>
 </a>
 
 <a href="https://apps.apple.com/in/app/fikaa-investment-app-for-women/id1641668238" target="_blank" class="project-icon-container">
+<div class="project-icon-img-container">
 <img src="/assets/img/fikaa_app_icon.webp" alt="GenWE application icon" class="project-icon" />
+</div>
 <p class="project-icon-title">FIKAA</p>
 </a>
 
 <a href="https://apps.apple.com/in/app/genwe/id1537440686" target="_blank" class="project-icon-container">
-<img src="/assets/img/genwe_app_icon.webp" alt="GenWE application icon" class="project-icon" style="border: 0.5px solid #d3d3d3;" />
+<div class="project-icon-img-container">
+<img src="/assets/img/genwe_app_icon.webp" alt="GenWE application icon" class="project-icon" />
+</div>
 <p class="project-icon-title">GenWE</p>
 </a>
 

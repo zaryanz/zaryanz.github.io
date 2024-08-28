@@ -26,6 +26,7 @@ html {
   --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mid-col: #808080;
   --border-col: #eee;
+  --project-icon-width: 7.25rem;
 }
 
 body {
@@ -523,6 +524,14 @@ footer .footer-links .fa-inverse {
   .post-heading .post-meta {
     display: block;
     margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --project-icon-width: 6.25rem;
+  }
+  .project-icon-title {
+    font-size: 0.5rem;
   }
 }
 .post-heading .post-meta .middot {
@@ -1178,36 +1187,37 @@ pre {
 
 .project-icon {
   border-radius: 12.5%;
-  width: 6.25rem;
+  width: var(--project-icon-width);
   margin-right: 0.5rem;
-  margin-top: 1rem;
 }
 
 .project-icon-container {
   display: block;
   align-items: center;
   text-decoration: none;
-  width: 6.25rem;
-  max-width: 6.25rem;
+  width: var(--project-icon-width);
+  max-width: var(--project-icon-width);
   margin-right: 1rem;
 }
 
 .project-icon-img-container {
   display: flex;
-  height: 6.25rem;
-  width: 6.25rem;
+  height: var(--project-icon-width);
+  width: var(--project-icon-width);
   align-items: center;
   margin-top: 1rem;
+  border: 0.5px solid #d3d3d3;
+  border-radius: 12.5%;
 }
 
 .project-icon-title {
   display: inline-block;
   margin: 0;
-  width: 6.25rem;
+  width: 7.25rem;
   font-size: 0.9rem;
-  font-weight: 600;
-  font-family: var(--header-font);
-  color: #ffffff;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-col);
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
 }
