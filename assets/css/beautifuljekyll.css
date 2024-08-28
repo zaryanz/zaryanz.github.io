@@ -1207,9 +1207,9 @@ pre {
   display: inline-block;
   margin: 0;
   width: var(--project-icon-width);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'League Spartan', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
   color: var(--text-col);
   text-align: center;
   margin-top: 0.75rem;
