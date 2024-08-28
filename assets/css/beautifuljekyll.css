@@ -526,14 +526,6 @@ footer .footer-links .fa-inverse {
     margin-bottom: 0;
   }
 }
-@media (max-width: 767px) {
-  :root {
-    --project-icon-width: 6.25rem;
-  }
-  .project-icon-title {
-    font-size: 0.5rem;
-  }
-}
 .post-heading .post-meta .middot {
   margin: 0 0.625rem;
 }
@@ -1194,6 +1186,7 @@ pre {
 .project-icon-container {
   display: block;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   width: var(--project-icon-width);
   max-width: var(--project-icon-width);
@@ -1213,11 +1206,17 @@ pre {
 .project-icon-title {
   display: inline-block;
   margin: 0;
-  width: 7.25rem;
+  width: var(--project-icon-width);
   font-size: 0.9rem;
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
   color: var(--text-col);
   text-align: center;
   margin-top: 0.75rem;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --project-icon-width: 6.25rem;
+  }
 }
