@@ -37,12 +37,12 @@ share-title: Aryan Singh | Projects
 <p class="project-icon-title">GenWE</p>
 </a>
 
-<a href="https://www.asttaas.com/" target="_blank" class="project-icon-container">
+<div class="project-icon-container">
 <div class="project-icon-img-container">
 <img src="/assets/img/ast_logo.webp" alt="AST TaaS Web Portal icon"/>
 </div>
 <p class="project-icon-title">ACT Web Portal</p>
-</a>
+</div>
 
 <a href="https://www.remassis.com/" target="_blank" class="project-icon-container">
 <div class="project-icon-img-container">
