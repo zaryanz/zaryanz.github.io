@@ -1215,8 +1215,24 @@ pre {
   margin-top: 0.75rem;
 }
 
+.pdf-container {
+    width: min(87vw, 1000px);
+    margin: 2rem auto;
+}
+
+.pdf-container iframe {
+    display: block;
+    width: 100%;
+    height: clamp(700px, 90vh, 1400px);
+    border: none;
+    border-radius: 12px;
+}
+
 @media (max-width: 767px) {
   :root {
     --project-icon-width: 6.25rem;
+  }
+  .pdf-container {
+    display: none;
   }
 }
