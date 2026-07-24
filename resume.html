@@ -1,27 +1,38 @@
 ---
 layout: page
 title: Resume
+full-width: true
 ---
 
-<hr />
-
-<div style="flex-direction: row; margin-bottom: 100px; margin-top: 30px">
-  <p>
-    I am open for Software Engineer roles. You can reach out to me in the
-    <a href="/aboutme">About Me</a> section. My resume can be found below:
-  </p>
-  <div id="resume-download-section">
-    <span
-      id="resume-pdf-icon"
-      class="far fa-file-pdf"
-      style="margin-right: 4px"
-    ></span>
-    <a
-      id="resume-download-link"
-      target="_blank"
-      href="/static/Aryan_Singh_Resume.pdf"
-      >Download/View Resume</a
-    >
+<div class="container-md">
+  <div class="row justify-content-center">
+    <div class="col-xl-8 col-lg-10">
+      <hr />
+      <div style="flex-direction: row">
+        <p>
+          I am open for Software Engineer roles. You can reach out to me
+          <a href="mailto:singh@aryn.info">here</a>. My resume can be found
+          below:
+        </p>
+        <div id="resume-download-section">
+          <span
+            id="resume-pdf-icon"
+            class="far fa-file-pdf"
+            style="margin-right: 4px"
+          ></span>
+          <a
+            id="resume-download-link"
+            target="_blank"
+            href="/static/Aryan_Singh_Resume.pdf"
+            >Download Resume</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pdf-container">
+    <iframe src="/static/Aryan_Singh_Resume.pdf" loading="lazy" title="Resume">
+    </iframe>
   </div>
 </div>
 
@@ -53,8 +64,13 @@ title: Resume
   fetch("/static/Aryan_Singh_Resume.pdf").then((data) => {
     let resumeLastModifiedDate = new Date(data.headers.get("Last-Modified"));
     resumeLastModifiedDate = resumeLastModifiedDate.toShortFormat();
-    document.querySelector(
-      "#resume-download-link"
-    ).innerHTML += ` (Last updated on ${resumeLastModifiedDate})`;
+
+    const resumeLink = document.querySelector("#resume-download-link");
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      resumeLink.innerHTML = `Download/View Resume (Last updated on ${resumeLastModifiedDate})`;
+    } else {
+      resumeLink.innerHTML = `Download Resume (Last updated on ${resumeLastModifiedDate})`;
+    }
   });
 </script>
