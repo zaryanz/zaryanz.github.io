@@ -7,3 +7,8 @@
   image: /assets/img/JMRDPoster.webp
   description: School Management App featuring easy attendance tracking, assignment updates, a virtual notice board and a fun QnA section!
   website_link: https://jmrddatia.github.io/
+
+- name: "Code Churn in Vulnerability and Bug Commits: An Empirical Analysis"
+  image: /assets/img/ChurnBugsVulnPoster.webp
+  description: Master's research project investigating code churn patterns in vulnerability and bug-related commits using large-scale software repository mining and statistical analysis.
+  github_link: https://github.com/zaryanz/churn-bugs-vulns
