@@ -10,5 +10,5 @@
 
 - name: "Code Churn in Vulnerability and Bug Commits: An Empirical Analysis"
   image: /assets/img/ChurnBugsVulnPoster.webp
-  description: Master's research project investigating code churn patterns in vulnerability and bug-related commits using large-scale software repository mining and statistical analysis.
+  description: My Master's research project exploring what code churn can tell us about vulnerabilities, bugs, and how software evolves.
   github_link: https://github.com/zaryanz/churn-bugs-vulns
